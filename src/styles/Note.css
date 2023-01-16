@@ -1,6 +1,7 @@
 .note {
 	background-color: #fdfd66;
 	height: 15rem;
+	width: min(24rem, 100%);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
