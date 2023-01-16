@@ -10,7 +10,7 @@ function Note({ text, date }) {
       <p>{text}</p>
       <div className="note-footer">
         <small>{date}</small>
-        <MdDelete />
+        <MdDelete className="delete-icon" />
       </div>
     </div>
   );

@@ -1201,6 +1201,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/noto-serif-georgian@^4.5.12":
+  version "4.5.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-serif-georgian/-/noto-serif-georgian-4.5.12.tgz#aa585e499dd294242ebcd90806c99514b2038373"
+  integrity sha512-ogDlkdXdiN3+z15BzgW7xlIyjtnqKqfRauSju4xqrR6hKc0dFYgYE6xQbsBV6aNpWoLr1DcoaHc35crAaVeayQ==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"

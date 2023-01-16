@@ -1,13 +1,13 @@
 .note {
 	background-color: #fdfd66;
-	height: 15rem;
-	width: min(24rem, 100%);
+	height: 20rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
 	border-radius: 1rem;
 	padding: 1rem;
+	white-space: pre-wrap;
 }
 
 .note-footer {
@@ -15,5 +15,13 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	font-size: 1rem;
+}
+
+small {
+	font-size: 0.8rem;
+}
+
+.delete-icon {
+	font-size: 1.5rem;
+	cursor: pointer;
 }

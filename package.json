@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "@fontsource/noto-serif-georgian": "^4.5.12",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",

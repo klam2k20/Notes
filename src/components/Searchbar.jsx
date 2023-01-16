@@ -6,7 +6,7 @@ import '../styles/Searchbar.css';
 function Searchbar() {
   return (
     <div className="searchbar">
-      <MdOutlineSearch />
+      <MdOutlineSearch className="search-icon" />
       <input type="text" placeholder="Search..." />
     </div>
   );

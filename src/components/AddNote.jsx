@@ -22,7 +22,7 @@ function AddNote() {
       />
       <div className="note-footer">
         <small>
-          {`${200 - text.length} Characters Remaining`}
+          {`${200 - text.length} Remaining`}
         </small>
         <button className="save-btn" type="button">Save</button>
       </div>
