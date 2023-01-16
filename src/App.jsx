@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import Header from './components/Header';
+import Searchbar from './components/Searchbar';
 import NoteList from './components/NoteList';
 import './App.css';
 
@@ -20,6 +22,8 @@ function App() {
   ]);
   return (
     <div className="App">
+      <Header />
+      <Searchbar />
       <NoteList notes={notes} />
     </div>
   );
