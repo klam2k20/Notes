@@ -1,0 +1,14 @@
+.note.new {
+	background-color: turquoise;
+}
+
+.note.new textarea {
+	width: 100%;
+	border: none;
+	background-color: turquoise;
+	resize: none;
+}
+
+.note.new textarea:focus {
+	outline: none;
+}
