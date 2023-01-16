@@ -20,8 +20,9 @@ function App() {
       date: '01/14/23',
     },
   ]);
+
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <Searchbar />
       <NoteList notes={notes} />
