@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import Header from './components/Header';
@@ -7,8 +7,15 @@ import NoteList from './components/NoteList';
 import './App.css';
 
 function App() {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState(() => {
+    const storedNotes = JSON.parse(localStorage.getItem('react-notes-app'));
+    return storedNotes || [];
+  });
   const [search, setSearch] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem('react-notes-app', JSON.stringify(notes));
+  }, [notes]);
 
   const addNote = (text) => {
     const newNote = {
