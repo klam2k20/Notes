@@ -1,0 +1,18 @@
+.note {
+	background-color: #fdfd66;
+	height: 15rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.note-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	font-size: 1rem;
+}
