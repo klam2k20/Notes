@@ -5,11 +5,18 @@ import Note from './Note';
 import '../styles/NoteList.css';
 import AddNote from './AddNote';
 
-function NoteList({ notes }) {
+function NoteList({ notes, handleAddNote, handleDeleteNote }) {
   return (
     <div className="note-list">
-      {notes.map((note) => <Note text={note.text} date={note.date} />)}
-      <AddNote />
+      {notes.map((note) => (
+        <Note
+          key={note.id}
+          text={note.text}
+          date={note.date}
+          handleDeleteNote={() => handleDeleteNote(note.id)}
+        />
+      ))}
+      <AddNote handleAddNote={handleAddNote} />
     </div>
   );
 }
@@ -19,6 +26,8 @@ NoteList.propTypes = {
     text: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
   })).isRequired,
+  handleAddNote: PropTypes.func.isRequired,
+  handleDeleteNote: PropTypes.func.isRequired,
 };
 
 export default NoteList;

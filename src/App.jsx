@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 import Header from './components/Header';
 import Searchbar from './components/Searchbar';
@@ -6,26 +7,30 @@ import NoteList from './components/NoteList';
 import './App.css';
 
 function App() {
-  const [notes] = useState([
-    {
-      text: 'Note 1',
-      date: '01/12/23',
-    },
-    {
-      text: 'Note 2',
-      date: '01/13/23',
-    },
-    {
-      text: 'Note 3',
-      date: '01/14/23',
-    },
-  ]);
+  const [notes, setNotes] = useState([]);
+  const [search, setSearch] = useState('');
+
+  const addNote = (text) => {
+    const newNote = {
+      id: uuidv4(),
+      text,
+      date: new Date().toLocaleDateString(),
+    };
+    setNotes([...notes, newNote]);
+  };
+
+  const deleteNote = (id) => {
+    const filteredNotes = notes.filter(((note) => note.id !== id));
+    setNotes(filteredNotes);
+  };
+
+  const filteredNotes = notes.filter((note) => note.text.toLowerCase().includes(search));
 
   return (
     <div className="app">
       <Header />
-      <Searchbar />
-      <NoteList notes={notes} />
+      <Searchbar handleSearch={setSearch} />
+      <NoteList notes={filteredNotes} handleAddNote={addNote} handleDeleteNote={deleteNote} />
     </div>
   );
 }

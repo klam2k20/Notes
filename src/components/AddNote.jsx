@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import '../styles/AddNote.css';
 
-function AddNote() {
+function AddNote({ handleAddNote }) {
   const [text, setText] = useState('');
 
   const handleInput = (e) => {
     if (text.length < 200) {
       setText(e.target.value);
+    }
+  };
+
+  const addNote = () => {
+    if (text.trim().length > 0) {
+      handleAddNote(text);
+      setText('');
     }
   };
 
@@ -24,10 +32,14 @@ function AddNote() {
         <small>
           {`${200 - text.length} Remaining`}
         </small>
-        <button className="save-btn" type="button">Save</button>
+        <button className="save-btn" type="button" onClick={addNote}>Save</button>
       </div>
     </div>
   );
 }
+
+AddNote.propTypes = {
+  handleAddNote: PropTypes.func.isRequired,
+};
 
 export default AddNote;
