@@ -30,7 +30,7 @@
 	outline: none;
 }
 
-.character-count {
+#dark .character-count {
 	font-size: 0.8rem;
 	color: #fffcff;
 }
