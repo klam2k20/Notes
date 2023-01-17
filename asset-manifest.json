@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Notes/static/css/main.ea3e4a92.css",
+    "main.js": "/Notes/static/js/main.9b0d4ef0.js",
+    "static/media/noto-serif-georgian-all-400-normal.woff": "/Notes/static/media/noto-serif-georgian-all-400-normal.df909f7ab66796779785.woff",
+    "static/media/noto-serif-georgian-georgian-400-normal.woff2": "/Notes/static/media/noto-serif-georgian-georgian-400-normal.093f874df4a76b14fa28.woff2",
+    "static/media/noto-serif-georgian-latin-400-normal.woff2": "/Notes/static/media/noto-serif-georgian-latin-400-normal.31902680c0627f6e6d87.woff2",
+    "static/media/noto-serif-georgian-latin-ext-400-normal.woff2": "/Notes/static/media/noto-serif-georgian-latin-ext-400-normal.bf97474312d3bfcfa43f.woff2",
+    "index.html": "/Notes/index.html",
+    "main.ea3e4a92.css.map": "/Notes/static/css/main.ea3e4a92.css.map",
+    "main.9b0d4ef0.js.map": "/Notes/static/js/main.9b0d4ef0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea3e4a92.css",
+    "static/js/main.9b0d4ef0.js"
+  ]
+}
