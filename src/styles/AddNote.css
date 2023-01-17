@@ -27,14 +27,8 @@ textarea::placeholder {
 }
 
 #dark .note.new,
-#dark textarea {
-	background-color: var(--dark-yellow);
-}
-
+#dark textarea,
 #dark textarea::placeholder {
-	color: var(--white);
-}
-
-#dark .save-btn {
-	color: var(--dark-yellow);
+	background-color: var(--dark-yellow);
+	color: black;
 }
