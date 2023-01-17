@@ -1,8 +1,7 @@
 import React from 'react';
 import PropType from 'prop-types';
 import Switch from 'react-switch';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { IoIosSunny } from 'react-icons/io';
+import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 
 import '../styles/Header.css';
 
@@ -14,10 +13,10 @@ function Header({ theme, handleTheme }) {
         onChange={handleTheme}
         checked={theme === 'dark'}
         uncheckedIcon={<div className="switch-icon"><BsFillMoonStarsFill /></div>}
-        checkedIcon={<div className="switch-icon"><IoIosSunny /></div>}
-        onColor="#f8f32b"
-        offColor="#bebebe"
-        onHandleColor="#000"
+        checkedIcon={<div className="switch-icon"><BsFillSunFill /></div>}
+        onColor="#fff"
+        offColor="#3d3d3d"
+        onHandleColor="#3d3d3d"
       />
     </div>
   );

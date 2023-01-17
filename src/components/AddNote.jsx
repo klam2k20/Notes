@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { HiOutlinePlus } from 'react-icons/hi';
 
 import '../styles/AddNote.css';
 
@@ -32,7 +33,7 @@ function AddNote({ handleAddNote }) {
         <small className="character-count">
           {`${200 - text.length} Remaining`}
         </small>
-        <button className="save-btn" type="button" onClick={addNote}>Save</button>
+        <HiOutlinePlus className="save-btn" type="button" onClick={addNote} />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Header from './components/Header';
 import Searchbar from './components/Searchbar';
 import NoteList from './components/NoteList';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   const [notes, setNotes] = useState(() => {

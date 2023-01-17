@@ -5,15 +5,7 @@
 	align-items: flex-start;
 	border-radius: 1rem;
 	padding: 1rem;
-}
-
-#light .note {
-	background-color: #fcfc22;
-}
-
-#dark .note {
-	background-color: #f8f32b;
-	color: #1b1c1e;
+	background-color: var(--white);
 }
 
 .note p {
@@ -29,11 +21,11 @@
 	width: 100%;
 }
 
-small {
-	font-size: 0.8rem;
-}
-
 .delete-icon {
 	font-size: 1.5rem;
 	cursor: pointer;
+}
+
+#dark .note {
+	background-color: var(--dark-note-bg);
 }

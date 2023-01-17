@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Note from './Note';
-import '../styles/NoteList.css';
 import AddNote from './AddNote';
+import '../styles/NoteList.css';
 
 function NoteList({ notes, handleAddNote, handleDeleteNote }) {
   return (

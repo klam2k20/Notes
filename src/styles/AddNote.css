@@ -1,43 +1,40 @@
-.note.new textarea {
+.note.new {
+	background-color: var(--yellow);
+}
+
+textarea {
 	width: 100%;
 	border: none;
 	resize: none;
 	font-size: 1.25rem;
+	background-color: var(--yellow);
 }
 
-#light .note.new {
-	background-color: #48ada9;
-}
-
-#light textarea {
-	background-color: #48ada9;
-}
-
-#dark .note.new {
-	background-color: #3c908d;
-}
-
-#dark textarea {
-	background-color: #3c908d;
-	color: #fffcff;
-}
-
-#dark textarea::placeholder {
-	color: #fffcff;
-}
-
-.note.new textarea:focus {
+textarea:focus {
 	outline: none;
 }
 
-#dark .character-count {
-	font-size: 0.8rem;
-	color: #fffcff;
+textarea::placeholder {
+	color: black;
 }
 
 .save-btn {
-	padding: 0.25rem 0.5rem;
-	border-radius: 100rem;
-	border-color: rgb(192, 192, 192);
-	border: none;
+	color: black;
+	padding: 0.5rem;
+	border-radius: 50%;
+	background-color: var(--white);
+	font-size: 2rem;
+}
+
+#dark .note.new,
+#dark textarea {
+	background-color: var(--dark-yellow);
+}
+
+#dark textarea::placeholder {
+	color: var(--white);
+}
+
+#dark .save-btn {
+	color: var(--dark-yellow);
 }

@@ -2,10 +2,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	gap: 0.25rem;
-	padding: 0.5rem;
-	border-radius: 0.25rem;
-	border: solid rgb(192, 192, 192);
+	gap: 0.5rem;
+	padding: 0.75rem;
+	border-radius: 0.5rem;
+	background-color: var(--light-grey);
 }
 
 .search-icon {
@@ -16,16 +16,19 @@
 	border: none;
 	width: 100%;
 	font-size: 1.25rem;
-}
-
-#dark .searchbar input {
-	background-color: #1b1c1e;
-}
-
-#dark input::placeholder {
-	color: #fffcff;
+	background-color: var(--light-grey);
 }
 
 .searchbar input:focus {
 	outline: none;
+}
+
+#dark .searchbar,
+#dark .searchbar input {
+	background-color: var(--dark-grey);
+}
+
+#dark input,
+#dark input::placeholder {
+	color: var(--white);
 }

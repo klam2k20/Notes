@@ -4,22 +4,15 @@
 	align-items: center;
 }
 
-.header button {
-	padding: 0.5rem;
-	border-radius: 100rem;
-	font-size: 1.25rem;
-	border-color: rgb(192, 192, 192);
-	border: none;
-}
-
 .switch-icon {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
 	padding-right: 2px;
+	color: var(--white);
 }
 
 #dark .switch-icon {
-	color: #1b1c1e;
+	color: var(--dark-bg);
 }
