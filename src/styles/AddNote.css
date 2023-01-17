@@ -1,21 +1,38 @@
-.note.new {
-	background-color: turquoise;
-}
-
 .note.new textarea {
 	width: 100%;
 	border: none;
-	background-color: turquoise;
 	resize: none;
 	font-size: 1.25rem;
+}
+
+#light .note.new {
+	background-color: #48ada9;
+}
+
+#light textarea {
+	background-color: #48ada9;
+}
+
+#dark .note.new {
+	background-color: #3c908d;
+}
+
+#dark textarea {
+	background-color: #3c908d;
+	color: #fffcff;
+}
+
+#dark textarea::placeholder {
+	color: #fffcff;
 }
 
 .note.new textarea:focus {
 	outline: none;
 }
 
-small {
+.character-count {
 	font-size: 0.8rem;
+	color: #fffcff;
 }
 
 .save-btn {

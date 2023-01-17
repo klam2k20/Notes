@@ -1,5 +1,4 @@
 .note {
-	background-color: #fdfd66;
 	min-height: 15rem;
 	display: flex;
 	flex-direction: column;
@@ -7,6 +6,15 @@
 	align-items: flex-start;
 	border-radius: 1rem;
 	padding: 1rem;
+}
+
+#light .note {
+	background-color: #fcfc22;
+}
+
+#dark .note {
+	background-color: #f8f32b;
+	color: #1b1c1e;
 }
 
 .note p {

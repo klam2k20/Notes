@@ -12,6 +12,7 @@ function App() {
     return storedNotes || [];
   });
   const [search, setSearch] = useState('');
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     localStorage.setItem('react-notes-app', JSON.stringify(notes));
@@ -31,13 +32,20 @@ function App() {
     setNotes(filteredNotes);
   };
 
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  };
+
   const filteredNotes = notes.filter((note) => note.text.toLowerCase().includes(search));
 
   return (
-    <div className="app">
-      <Header />
-      <Searchbar handleSearch={setSearch} />
-      <NoteList notes={filteredNotes} handleAddNote={addNote} handleDeleteNote={deleteNote} />
+    <div className="app" id={theme}>
+      <div className="container">
+        <Header theme={theme} handleTheme={toggleTheme} />
+        <Searchbar handleSearch={setSearch} />
+        <NoteList notes={filteredNotes} handleAddNote={addNote} handleDeleteNote={deleteNote} />
+      </div>
     </div>
   );
 }

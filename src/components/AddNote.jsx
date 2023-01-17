@@ -29,7 +29,7 @@ function AddNote({ handleAddNote }) {
         onInput={(e) => handleInput(e)}
       />
       <div className="note-footer">
-        <small>
+        <small className="character-count">
           {`${200 - text.length} Remaining`}
         </small>
         <button className="save-btn" type="button" onClick={addNote}>Save</button>

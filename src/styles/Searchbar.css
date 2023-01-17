@@ -18,6 +18,14 @@
 	font-size: 1.25rem;
 }
 
+#dark .searchbar input {
+	background-color: #1b1c1e;
+}
+
+#dark input::placeholder {
+	color: #fffcff;
+}
+
 .searchbar input:focus {
 	outline: none;
 }
