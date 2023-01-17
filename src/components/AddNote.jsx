@@ -14,7 +14,7 @@ function AddNote({ handleAddNote }) {
 
   const addNote = () => {
     if (text.trim().length > 0) {
-      handleAddNote(text);
+      handleAddNote(text.substring(0, 200));
       setText('');
     }
   };
