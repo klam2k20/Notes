@@ -1,40 +1,64 @@
 <p align="center">
-    <img src="imgs/banner.png">
+    <img src="imgs/demo.gif" height="500">
 </p>
 
 [Preview](https://klam2k20.github.io/Notes/)
 
 ## Overview
 
-This is a responsive Notes App created with ReactJS. The app has the fundamental functionalities to create and delete tasks.
+This is a responsive Notes App. It has the fundamental functionalities to create and delete tasks.
 It utilizes React's internal useState to handle app state and local storage to track notes in between sessions.
 
-The application was designed to be responsive for various device sizes as seen below: <br> <br>
-<img src="imgs/Note-sm.png" height=500> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="imgs/Note-md.png" height=500>
-<img src="imgs/Note-lg.png" height=500 width=800>
+## Technology
+
+- <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+- <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+
+## Features
+
+- Responsive Design
+<p align="center">
+    <img src="imgs/responsive.gif" height="400">
+</p>
+
+- Add Tasks
+<p align="center">
+    <img src="imgs/add-task.gif" height="400">
+</p>
+
+- Delete Tasks
+<p align="center">
+    <img src="imgs/delete-task.gif" height="400">
+</p>
+
+- Filter Tasks
+<p align="center">
+    <img src="imgs/filter-task.gif" height="400">
+</p>
+
+- Dark Mode
+<p align="center">
+    <img src="imgs/dark-mode.gif" height="400">
+</p>
 
 ## Getting Started
 
 ### Prerequisites
 
-- yarn
-  ```sh
-  npm install -g yarn
-  ```
+- yarn/npm
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/klam2k20/Notes.git
-   ```
-2. `cd` to project folder
-3. Install yarn packages
-   ```sh
-   yarn install
-   ```
-4. Start React project
-   ```sh
-   yarn start
-   ```
+```sh
+# Clone the repo
+git clone https://github.com/klam2k20/Notes.git
+
+# cd to project folder
+cd Notes
+
+# Install dependencies
+yarn install
+
+# Start the application
+yarn start
+```
