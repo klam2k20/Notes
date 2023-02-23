@@ -37,7 +37,8 @@ function App() {
     setTheme(newTheme);
   };
 
-  const filteredNotes = notes.filter((note) => note.text.toLowerCase().includes(search));
+  const filteredNotes = notes.filter((note) => note.text.toLowerCase()
+    .includes(search.toLowerCase()));
 
   return (
     <div className="app" id={theme}>
