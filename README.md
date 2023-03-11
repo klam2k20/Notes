@@ -2,8 +2,6 @@
     <img src="imgs/demo.gif" height="500">
 </p>
 
-[Preview](https://klam2k20.github.io/Notes/)
-
 ## Overview
 
 This is a responsive Notes App. It has the fundamental functionalities to create and delete tasks.
